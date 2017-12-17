@@ -33,7 +33,6 @@ body {
     line-height: 60px;
     height: 60px;
     padding: 0 30px;
-    position: relative;
 }
 
 .navBar li a {
@@ -69,10 +68,6 @@ body {
     color: #0AF;
 }
 
-.navBar li:hover ul{
-    display: block;
-}
-
 .navBar li:hover ul li a{
     color: #AEB7C2;
 }
@@ -87,15 +82,10 @@ body {
 }
 
 .leftDropDown{
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    z-index: 2;
+    display: block;
 }
 
 .leftDropDown li{
-    background: #20262E;
     list-style: none;
     height: 40px;
     line-height: 40px;
@@ -105,7 +95,7 @@ body {
     text-decoration: none;
 }
 
-.navBar li:hover ul li:hover a{
+.dropdown li:hover a{
     color: #fff;
 }
 
@@ -120,6 +110,11 @@ body {
     padding: 0 30px;
     color: #fff;
     font-size: 14px;
+}
+
+.leftNavFooter:hover{
+    color: #fff;
+    text-decoration: none;
 }
 
 .leftNavFooter .fa {
@@ -271,6 +266,8 @@ footer {
     font-size: 13px;
     text-transform: uppercase;
     color: #9E9E9E;
+    position: absolute;
+    bottom: 10px;
 }
 /* Footer Ends */
 

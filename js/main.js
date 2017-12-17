@@ -10,4 +10,4 @@ var toggleMenu = setInterval(function () {
         $('.leftNav').addClass('slideInLeft').removeClass('hidden').addClass('col-sm-2');
         $('.main').removeClass('col-sm-12').addClass('col-sm-10').addClass('mainArea');
     })
-}, 60/1000);
+}, 1000);

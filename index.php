@@ -6,7 +6,6 @@
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
   </head>
 
   <body>
