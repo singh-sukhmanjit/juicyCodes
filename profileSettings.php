@@ -5,6 +5,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
   </head>
 
   <body>
@@ -16,7 +17,7 @@
             <?php include 'pages/leftNav.php'; ?>
 <!-- ************ -->
 
-            <div class="col-sm-10 mainArea">
+            <div class="col-sm-10 main mainArea">
 
 <!-- Header -->
                 <?php include 'pages/header.php'; ?>

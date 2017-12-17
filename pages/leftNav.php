@@ -1,9 +1,9 @@
-<div class="col-sm-2 leftNav">
+<div class="col-sm-2 leftNav animated slideInLeft">
     <div class="logo">
         JuicyCodes
     </div>
     <ul class="navBar">
-        <li class="active"><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+        <li class="active"><a href="index.php"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span></a></li>
         <li><a href="uploadVideo.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i> <span>Upload Video</span></a></li>
         <li><a href="manageVideos.php"><i class="fa fa-bars" aria-hidden="true"></i> <span>Manage Videos</span></a></li>
         <li><a href="javascript:void()"><i class="fa fa-server" aria-hidden="true"></i> <span>Servers</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a>

@@ -1,5 +1,5 @@
 <div class="row header">
-    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    <i class="fa fa-arrow-left collapseNav" aria-hidden="true"></i>
     <ul class="profileMenu pull-right">
         <li>
             <a href="#"><i class="fa fa-code" aria-hidden="true"></i> <span>USER</span>

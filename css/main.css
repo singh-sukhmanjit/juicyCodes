@@ -82,6 +82,10 @@ body {
     margin-right: 10px;
 }
 
+.hidden{
+    display: none;
+}
+
 .leftDropDown{
     display: none;
     position: absolute;
@@ -142,7 +146,7 @@ body {
     line-height: 80px;
 }
 
-.header .fa-arrow-left {
+.header .fa-arrow-left, .header .fa-arrow-right {
     margin-left: 10px;
     font-size: 20px;
 }
