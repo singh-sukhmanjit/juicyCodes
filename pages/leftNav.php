@@ -1,30 +1,32 @@
 <div class="col-sm-2 leftNav animated slideInLeft">
     <div class="logo">
-        JuicyCodes
+        <img src="http://falcon.streamgo.me/assets/img/juicycodes.png" alt="JUICYCODES.COM" class="img-responsive logo">
     </div>
     <ul class="navBar">
-        <li class="active"><a href="index.php"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+        <li><a href="index.php" class="active"><i class="fa fa-tachometer" aria-hidden="true"></i> <span>Dashboard</span></a></li>
         <li><a href="uploadVideo.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i> <span>Upload Video</span></a></li>
         <li><a href="manageVideos.php"><i class="fa fa-bars" aria-hidden="true"></i> <span>Manage Videos</span></a></li>
-        <li><a href="javascript:void()" data-toggle="collapse" data-target="#settings"><i class="fa fa-sliders" aria-hidden="true"></i> <span>Settings</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
-        <div id="settings" class="collapse">
-            <ul class="leftDropDown">
-                <li><a href="generalSettings.php">General Settings</a></li>
-                <li><a href="profileSettings.php">Profile Settings</a></li>
-                <li><a href="miscSettings.php">Misc Settings</a></li>
-                <li><a href="playerSettings.php">Player Settings</a></li>
-                <li><a href="advertiseSettings.php">Advertise Settings</a></li>
-                <li><a href="firewallSettings.php">Firewall Settings</a></li>
-            </ul>
-        </div>
-        <li><a href="javascript:void()" data-toggle="collapse" data-target="#servers"><i class="fa fa-server" aria-hidden="true"></i> <span>Servers</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
-        <div id="servers" class="collapse">
-            <ul class="leftDropDown">
-                <li><a href="newServer.php">New Server</a></li>
-                <li><a href="manageServer.php">Manage Servers</a></li>
-            </ul>
-        </div>
-        <li><a href="javascript:void()" data-toggle="collapse" data-target="#users"><i class="fa fa-users" aria-hidden="true"></i> <span>Users</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+        <li><a href="#settings" data-toggle="collapse" collapsed><i class="fa fa-sliders" aria-hidden="true"></i> <span>Settings</span> <i class="fa fa-angle-left pull-right" aria-hidden="true"></i></a>
+            <div id="settings" class="collapse">
+                <ul class="leftDropDown">
+                    <li><a href="generalSettings.php">General Settings</a></li>
+                    <li><a href="profileSettings.php">Profile Settings</a></li>
+                    <li><a href="miscSettings.php">Misc Settings</a></li>
+                    <li><a href="playerSettings.php">Player Settings</a></li>
+                    <li><a href="advertiseSettings.php">Advertise Settings</a></li>
+                    <li><a href="firewallSettings.php">Firewall Settings</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#servers" data-toggle="collapse" collapsed><i class="fa fa-server" aria-hidden="true"></i> <span>Servers</span> <i class="fa fa-angle-left pull-right" aria-hidden="true"></i></a>
+            <div id="servers" class="collapse">
+                <ul class="leftDropDown">
+                    <li><a href="newServer.php">New Server</a></li>
+                    <li><a href="manageServer.php">Manage Servers</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#users" data-toggle="collapse" collapsed><i class="fa fa-users" aria-hidden="true"></i> <span>Users</span> <i class="fa fa-angle-left pull-right" aria-hidden="true"></i></a></li>
         <div id="users" class="collapse">
             <ul class="leftDropDown">
                 <li><a href="newUser.php">New User</a></li>
@@ -34,8 +36,7 @@
         </div>
 
     </ul>
-    <a href="#" class="leftNavFooter">
-        <i class="fa fa-life-ring"></i>
+    <a class="footer" href="#"><i class="fa fa-life-ring"></i>
         <span>SUPPORT CENTER</span>
     </a>
 </div>

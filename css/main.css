@@ -1,66 +1,122 @@
 body {
-    background: #F3F5F8;
+    background-color: rgb(243, 245, 248);
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    color: rgb(103, 106, 109);
+}
+
+a, a:hover, a:focus{
+    text-decoration: none;
 }
 
 /* Left Navigation Begin*/
 
 .leftNav {
-    height: 100vh;
-    padding: 0;
-    width: 20%;
-    background: #2B333E;
+    width: 260px;
+    height: 100%;
+    left: 0px;
+    background-color: rgb(43, 51, 62);
+    float: left;
     position: fixed;
+    padding: 0;
 }
 
-.logo {
+/* .logo {
     height: 100px;
     line-height: 100px;
     font-size: 34px;
     text-align: center;
     color: #fff;
     background: #333D4A;
+} */
+
+.logo {
+    background-color: #333D4A;
+    padding: 30px;
+}
+
+.logo img{
+    vertical-align: middle;
+    padding: 0;
 }
 
 .navBar {
     display: block;
-    padding: 0;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .navBar li {
-    list-style: none;
-    border-left: 5px solid transparent;
-    line-height: 60px;
-    height: 60px;
-    padding: 0 30px;
+    position: relative;
+    display: block;
 }
 
 .navBar li a {
-    color: #AEB7C2;
-    text-decoration: none;
     font-size: 14px;
+    padding: 18px 30px;
+    color: #AEB7C2;
+    border-left: 5px solid transparent;
+    position: relative;
+    display: block;
 }
 
-.navBar li a .fa-chevron-right {
-    font-size: 12px;
-    line-height: 60px;
+.navbar li i{
     margin-right: 10px;
+    font-size: 18px;
 }
 
-.navBar li.active {
-    background: #20262E;
-    border-left: 5px solid #0AF;
+.navbar li span{
+    position: relative;
+    top: -2px;
 }
 
-.navBar li.active .fa {
+.navbar li a span{
+    vertical-align: text-bottom;
+
+}
+
+.navBar li a .fa-angle-left {
+    display: inline-block;
+    vertical-align: middle;
+    transition: all .2s ease-out;
+    float: right;
+    position: relative;
+    top: 1px;
+    font-size: 16px;
+    line-height: 1.1;
+    transform: rotate(0deg);
+}
+
+
+/* .navBar li a[data-toggle=collapse] .fa-chevron-left{
+    transform: rotate(-90deg);
+} */
+/*
+.navBar li a[data-toggle=collapse].collapsed .fa-chevron-left{
+    transform: rotate(0deg);
+} */
+
+.navBar li a.active, .navBar li a:focus {
+    background-color: #20262E;
+    border-left-color: #0AF;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navBar li a.active i, .navBar li a:focus i{
     color: #0AF;
 }
 
-.navBar li.active a {
+.navBar li a.active i {
+    color: #0AF;
+}
+
+.navBar li a.active {
     color: #fff;
 }
 
 .navBar li:hover a {
+    text-decoration: none;
     color: #fff;
 }
 
@@ -99,28 +155,23 @@ body {
     color: #fff;
 }
 
-.leftNavFooter {
-    height: 65px;
-    line-height: 65px;
-    background: #41B314;
+.leftNav .footer {
+    display: block;
     position: absolute;
     bottom: 0;
-    display: block;
     width: 100%;
-    padding: 0 30px;
+    padding: 20px 30px;
+    background-color: #41B314;
     color: #fff;
-    font-size: 14px;
 }
 
-.leftNavFooter:hover{
-    color: #fff;
-    text-decoration: none;
+.leftNav .footer:hover{
+    background-color: #3ca512;
 }
 
-.leftNavFooter .fa {
-    font-size: 24px;
+.leftNav .footer i{
     margin-right: 10px;
-    line-height: 65px;
+    font-size: 24px;
     vertical-align: middle;
 }
 
@@ -129,9 +180,11 @@ body {
 /* Main Area Begin*/
 
 .mainArea {
-    width: 80%;
+    width: calc(100% - 260px) !important;
+    left: 0;
     position: relative;
-    left: 20%;
+    float: right;
+    background-color: #f5f5fa;
 }
 
 .header {
